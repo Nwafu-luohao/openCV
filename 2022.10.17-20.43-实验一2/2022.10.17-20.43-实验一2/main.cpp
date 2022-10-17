@@ -3,7 +3,7 @@
 using namespace std;
 using namespace cv; //opencv µÄÃüÃû¿Õ¼ä
 
-int w = 600;
+int w = 1000;
 
 void MyLine(Mat img, Point start, Point end)
 {
@@ -134,5 +134,7 @@ int main()
 		Scalar(0, 255, 255),
 		-1,
 		8);
-	cv::imshow(atom_image);
+	imshow("test", rook_image);
+	waitKey(0);
+	return 0;
 }
